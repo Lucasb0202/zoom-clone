@@ -15,7 +15,7 @@ const Sidebar = () => {
     justify-between bg-dark-1 p-6 pt-28 text-white max-sm:hidden lg:w-[264px]'>
       <div className='flex flex-1 flex-col gap-6'>
         {sidebarLinks.map((link) => {
-          const isActive = pathname === link.route || pathname.startsWith(link.route);
+          const isActive = (pathname === link.route || pathname.startsWith(link.route));
 
           return (
             <Link 
